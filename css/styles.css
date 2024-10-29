@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header {
+    background-color: #020202;
+    color: white;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 5em 0;
+
+}
+
+p{
+    padding-bottom: 50px;
+}
+.cta-button {
+    background-color: #ff0000;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+   
+}
+
+section {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.game-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    padding: 2em;
+}
+
+.game-item {
+    background-color: #020202;
+    padding: 2em;
+    border: 1px solid #020202;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.game-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.game-item p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+footer {
+    background-color: #020202;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 1em;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media li {
+    margin: 0 1em;
+}
+
+.social-media li a img {
+    width: 32px;
+    height: 32px;
+}
