@@ -1,0 +1,758 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #020202;
+    color: #ffffff;
+}
+
+/* Web-Header starts */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    height: 80px;
+}
+
+.logo-container,
+.nav-links,
+.social-media {
+    flex: 1;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-right: 26px;
+}
+
+.nav-links li {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff0000;
+}
+
+.arrow {
+    display: none;
+}
+
+.home-link {
+    display: none;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 85px;
+}
+
+
+.social-media li {
+    display: flex;
+    list-style: none;
+}
+
+.social-media a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ff0000;
+}
+
+.social-media li {
+    margin: 0 0.5em;
+}
+
+.social-media li a img {
+    width: 32px;
+    height: 32px;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/media/CyberwayRiders.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.logo1 {
+    font-family: 'MyCustomFont', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.logo {
+    font-family: 'MyCustomFont', sans-serif;
+    
+    color: white;
+    text-align: end;
+    margin-right: 80px;
+    margin-bottom: 35px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.word0 {
+    top: 20px;
+    font-size: 55px;
+    color: red;
+    position: relative;  
+}
+
+.word1 {
+    top: 15px;
+    font-size: 45px;
+    color: red;
+    position: relative;
+    /* Adjust the spacing as needed */
+}
+
+.word2 {
+    margin-right: 0.5px;
+    /* Adjust the spacing as needed */
+}
+
+.word4 {
+    margin-left: 8px;
+}
+
+.reg-symbol {
+    font-size: 6px;
+    /* Adjust the size as needed */
+    font-family: Arial, sans-serif;
+    /* Set to a normal font family */
+    vertical-align: super;
+    /* Align the symbol properly */   
+    color: rgb(222, 221, 221);
+}
+
+.toggle-button {
+    display: none;
+    /* Hide by default */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: -10px;
+}
+
+
+/* Mobile navigation-header-sublist */
+.sub-list {
+    display: none;
+    /* Hide submenu initially */
+    flex-direction: column;
+    /* Background color for submenu */
+    list-style-type: none;
+    /* No bullets */
+    margin: 0;
+    /* Remove margin */
+    padding: 0;
+    /* Remove padding */
+}
+
+.sub-list li {
+    display: none;
+}
+
+.sub-list li a {
+    padding: 10px;
+    /* Padding for submenu items */
+    color: white;
+    /* Text color */
+    text-decoration: none;
+    /* No underline */
+    display: block;
+    /* Full width */
+}
+
+/*header class almost ends here*/
+
+
+
+/*experiment*/
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li:hover .sub-list1 {
+    display: block;
+}
+
+/* Submenu hidden by default */
+.sub-list1 {
+    display: none;
+    /* Hide submenu initially */
+    position: absolute;
+    flex-direction: column;
+    background-color: #e11515;
+    /* Background color for submenu */
+    list-style-type: none;
+    /* No bullets */
+    left: 0;
+    /* Remove margin */
+    margin: 0;
+    /* Remove padding */
+    padding: 0;
+    height: 130px;
+    width: 210px;    
+}
+
+.sub-list1 li {
+    display: block;
+    flex-direction: column;
+    padding: 3px;
+}
+
+
+.sub-list1 li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: medium;
+    text-align: left;
+    width: 100%;
+}
+
+.sub-list1 li a:hover {
+    color: #cd9090c2;
+}
+
+.sub-list1.active {
+    display: block;
+}
+
+/* Styling for the main menu label */
+.menu-label {
+    cursor: pointer;
+    /* Pointer cursor for clickable label */
+    color: white;
+    display: block;
+    align-items: center;
+}
+/*experiment*/
+
+
+/*font-size */
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 35px;
+    /* Increase the font size for h1 */
+}
+
+h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 22px;
+    /* Increase the font size for h3 */
+}
+
+p {
+    font-size: 20px;
+    /* Increase the font size for paragraphs */
+}
+
+#home p {
+    font-size: 25px;
+    /* Increase the font size for paragraphs */
+}
+
+#games h3 {
+    font-size: 45px;
+}
+
+#games p {
+    font-size: 25px;
+    /* Increase the font size for paragraphs in the #games section */
+    font-weight: bold;
+}
+
+
+
+
+/*hero-section */
+.logo1 {
+    display: inline-block;
+    /* Make the logo an inline-block element */
+    margin-right: 0;
+    /* Remove the existing margin-right */
+}
+
+@media (max-width: 768px) {
+    .logo1 {
+        display: inline-block;
+        margin-right: 0;
+
+    }
+}
+
+.hero {
+    background-image: url('/media/ff.jpg');
+    background-size: cover;
+    background-position: bottom;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 7em 0;
+}
+
+
+.hero-container {
+    display: flex;
+}
+
+header {
+    order: 1;
+    /* Ensure the mobile header is first */
+}
+
+.hero-container {
+    order: 2;
+    /* Move the hero-container section below the header */
+    flex-direction: column;
+    /* Move the hero-container section below the header */
+}
+
+.cta-button {
+    background-color: #ff0000;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.cta-button:hover {
+    transform: scale(1.1);
+}
+
+
+.highlight {
+    color: red;
+    /* Change the color to red */
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+h2 {
+    padding-top: 20px;
+}
+
+section {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.game-item {
+    background-color: #000000;
+    padding: 2em;
+    border: 1px solid #020202;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    margin-top: 0;
+    height: 300px
+}
+
+.game-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.game-item h3 {
+    font-size: 100px;
+    margin-bottom: 0.5em;
+}
+
+.game-item p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+.about h2 {
+    color: red;
+}
+
+#goToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #e11515; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#goToTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+/*footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 1em;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-media a:hover {
+    color: red;
+}
+
+
+.footer-social-media i:hover {
+    scale: 1.;
+}
+
+#footer-copy {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.822);
+}
+
+
+
+/* Mobile view adjustments starts here*/
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: flex-start;
+        /* Align items to the start (left) */
+        padding: 10px;
+        /* Optional padding adjustment for mobile */
+        height: 134px;
+        order: 1;
+        position: relative;
+    }
+
+
+    /* Social media icons displayed in a row at the top left */
+    .social-media {
+        flex-direction: row;
+        display: flex;
+        /* Use flexbox to align icons horizontally */
+        justify-content: flex-start;
+        /* Align items to the start (left) */
+        width: 100%;
+        /* Optional: take full width */
+        order: 1;
+        /* Position social media above the logo */
+    }
+
+    .social-media li {
+        list-style: none;
+    }
+
+    .social-media a {
+        color: #ffffff;
+        font-size: 18px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .social-media a:hover {
+        color: #ff0000;
+    }
+
+    .logo-container {
+        display: flex;
+        flex-direction: row;
+        /* Align items in a row */
+        order: 2;
+        justify-content: space-between;
+        /* Space between logo and toggle button */
+        align-items: center;
+        /* Align items in a straight line */
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        /* Center the logo */
+        width: 100%;
+        order: 1;
+        /* Position logo before toggle button */
+        
+    }
+    .word0 {
+        font-size: 45px;
+        top: 16px;    
+    }
+
+    .word1 {
+       font-size: 30px;
+       top: 10px; 
+    }
+
+
+    .word1,
+    .word2,
+    .word3,
+    .word4 {
+        margin-top: 35px;
+    }
+
+    .reg-symbol {
+        font-size: 4px;
+        /* Adjust the size as needed */
+        font-family: Arial, sans-serif;
+        /* Set to a normal font family */
+        vertical-align: super;
+        color: rgb(222, 221, 221);
+    }
+
+    .toggle-button {
+        display: block;
+        order: 2;
+        /* Position toggle button after logo */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #e11515;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 10;
+        padding-top: 10px;
+        max-height: 0;
+        /* Initially collapsed */
+        overflow: hidden;
+        /* Hide overflowing content */
+        transition: max-height 0.5s ease;
+        /* Transition effect */
+    }
+
+    .nav-links li {
+        width: 100%;
+        color: white;
+        /* Text color */
+        text-decoration: none;
+        /* Remove link underline */
+        display: block;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 10px;
+        /* Add padding for better clickability */
+        text-align: left;
+        color: white;
+        /* Text color */
+        text-decoration: none;
+        /* Remove link underline */
+        display: block;
+        /* Make link take full width */
+        box-sizing: border-box;
+        width: calc(100% - 30px);
+        font-size: large;
+        padding-left: 7px;
+        margin-left: 0;
+    }
+
+    .nav-links a:hover {
+        color: #ffffff;
+    }
+
+
+    .nav-links.active {
+        display: flex;
+        height: auto;
+        /* Allow it to expand to fit all items */
+        padding-bottom: 10px;
+        max-height: 350px;
+    }
+
+    .arrow {
+        display: inline;
+    }
+
+    .home-link {
+        display: inline;
+    }
+
+    .nav-links li:hover .sub-list {
+        display: none;
+    }
+
+    /* Submenu hidden by default */
+    .sub-list {
+        display: none;
+        /* Hide submenu initially */
+        flex-direction: column;
+        background-color: #e11515;
+        /* Background color for submenu */
+        list-style-type: none;
+        /* No bullets */
+        margin: 0;
+        /* Remove margin */
+        padding: 0;
+        /* Remove padding */      
+    }
+
+    .sub-list li a {
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        display: block; 
+        font-size: medium;
+        padding-left: 25px;
+    }
+
+    .sub-list li a:hover {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .sub-list.active {
+        display: flex;      
+        /* Show submenu when active */
+    }
+
+    /* Styling for the main menu label */
+    .menu-label {
+        cursor: pointer;
+        /* Pointer cursor for clickable label */
+        color: white;
+        /* Text color */
+        padding: 15px;
+        /* Padding for label */
+        display: flex;
+        /* Flex display for icon */
+        align-items: center;
+        /* Center icon vertically */
+    }
+
+    /*header ends here*/
+
+    /*experiment*/
+    /* Mobile navigation-header-sublist */
+    .sub-list1 {
+        display: none;
+        /* Hide submenu initially */
+    }
+
+    .sub-list1 li {
+        display: none;
+    }
+
+    .sub-list1 li a {
+        display: none;
+    }
+
+    /*experiment*/
+
+    /*hero-section starts here */
+    .hero {
+        background-image: url('/media/ffs.jpg');
+        background-size: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        color: white;
+        text-align: center;
+        padding: 7em 0;
+    }
+
+    .game-item {
+        background-color: #000000;
+        padding: 2em;
+        border: 1px solid #020202;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    #games h3 {
+        font-size: 38px;
+    }
+
+    #footer-copy {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+    }
+
+}
